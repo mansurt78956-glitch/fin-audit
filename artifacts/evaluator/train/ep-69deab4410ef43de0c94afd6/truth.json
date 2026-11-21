@@ -1,0 +1,27 @@
+[
+  {
+    "issue_id": "ISS-1bfabdfc400eb40f",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "INV-319501271c6c5c56",
+      "INV-c56c5a504032e422",
+      "LR-b073ea175bac81db",
+      "LR-b66af6740f13361b",
+      "LR-c685543d29d7964f",
+      "LR-ee0dc77db0071d13"
+    ],
+    "expected_amount_minor": 13844,
+    "currency": "GBP",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-2f3ec2bce0f1c182",
+        "LR-b073ea175bac81db",
+        "LR-ee0dc77db0071d13",
+        "DOC-7aaf30b1d73f53dd",
+        "LR-b66af6740f13361b",
+        "LR-c685543d29d7964f",
+        "FX-c19bbec3a1489823"
+      ]
+    ]
+  }
+]

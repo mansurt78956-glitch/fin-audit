@@ -1,0 +1,21 @@
+[
+  {
+    "issue_id": "ISS-e58d54ac43dbf54e",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-e0b8ffbc7c2bff17",
+      "LR-0031b640b1ecae4d",
+      "LR-6150052d3ebe7835"
+    ],
+    "expected_amount_minor": 5854,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-a57f81b3e57344d0",
+        "LR-0031b640b1ecae4d",
+        "LR-6150052d3ebe7835",
+        "FX-70c9ebd0be9a98df"
+      ]
+    ]
+  }
+]

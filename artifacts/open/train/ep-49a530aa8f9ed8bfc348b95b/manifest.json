@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.2",
+  "generator_version": "2.2",
+  "episode_id": "ep-49a530aa8f9ed8bfc348b95b",
+  "company": "Мозаика Торговля",
+  "base_currency": "GBP",
+  "period_start": "2024-01-01T00:00:00+00:00",
+  "period_end": "2024-01-31T23:59:59+00:00",
+  "timezone": "UTC",
+  "record_counts": {
+    "ledger": 324,
+    "invoices": 85,
+    "payments": 77,
+    "fx": 172
+  },
+  "document_count": 162,
+  "ledger_row_count": 324,
+  "currency_exponents": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "KZT": 2,
+    "JPY": 0
+  },
+  "rounding": "ROUND_HALF_UP",
+  "csv_null": "null",
+  "transaction_count": 85
+}

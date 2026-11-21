@@ -1,0 +1,21 @@
+[
+  {
+    "issue_id": "ISS-c9e584e2044ac067",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-1cdd2a0cc7e28cc7",
+      "LR-d521c6050f63ca3d",
+      "PAY-380b1a7fa1d96521"
+    ],
+    "expected_amount_minor": 236012,
+    "currency": "USD",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-e1160189d72b5891",
+        "DOC-150212caa1732a3b",
+        "LR-98bc1e9b9b7a4349",
+        "LR-d521c6050f63ca3d"
+      ]
+    ]
+  }
+]

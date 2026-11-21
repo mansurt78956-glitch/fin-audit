@@ -1,0 +1,69 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "f8e4b1e3344f0e6f2117d83b5d66c6592b64469f0bbf3bf72e6fca0d5bb2a544",
+    "record_counts": {
+      "ledger": 272,
+      "invoices": 71,
+      "payments": 65,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-1a49ccaf6b66706b",
+    "type": "period_cutoff",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-ba5d8c9cb03b6d96",
+          "timestamp": "2025-01-02T19:00:00-05:00",
+          "currency": "USD",
+          "entity_id": "ENT-16fff513066446b0",
+          "invoice_id": "INV-8ad0eb159231fdaf",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 284056,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-ba5d8c9cb03b6d96",
+          "timestamp": "2024-12-31T19:00:00-05:00",
+          "currency": "USD",
+          "entity_id": "ENT-16fff513066446b0",
+          "invoice_id": "INV-8ad0eb159231fdaf",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 284056,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-18811fe3919873dc",
+          "timestamp": "2025-01-02T19:00:00-05:00",
+          "currency": "USD",
+          "entity_id": "ENT-16fff513066446b0",
+          "invoice_id": "INV-8ad0eb159231fdaf",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 284056
+        },
+        "after": {
+          "row_id": "LR-18811fe3919873dc",
+          "timestamp": "2024-12-31T19:00:00-05:00",
+          "currency": "USD",
+          "entity_id": "ENT-16fff513066446b0",
+          "invoice_id": "INV-8ad0eb159231fdaf",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 284056
+        }
+      }
+    ]
+  }
+]

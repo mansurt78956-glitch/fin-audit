@@ -1,0 +1,254 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "7cc9db1642d50db1f15f63037acd60cbb0ff36c03501aa04bcbc9c4a39dd11b3",
+    "record_counts": {
+      "ledger": 262,
+      "invoices": 66,
+      "payments": 65,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-61b9178394b479c9",
+    "type": "duplicate_invoice",
+    "changes": [
+      {
+        "table": "invoices",
+        "before": null,
+        "after": {
+          "doc_id": "DOC-d88c8be021505e52",
+          "invoice_id": "INV-b44cc1addd4c01b1",
+          "entity_id": "ENT-82d6589b3251c49c",
+          "supplier_invoice_ref": "REF-daf22f3b923632a6",
+          "issued_at": "2025-01-30T14:15:00+09:00",
+          "due_at": "2025-03-01T14:15:00+09:00",
+          "currency": "EUR",
+          "total_minor": 69042,
+          "line_items": [
+            {
+              "description": "оборудование",
+              "amount_minor": 69042
+            }
+          ]
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-03d5e53cc1cb98b9",
+          "timestamp": "2025-01-30T14:15:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-82d6589b3251c49c",
+          "invoice_id": "INV-b44cc1addd4c01b1",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 69042,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-a98cdd75150f3005",
+          "timestamp": "2025-01-30T14:15:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-82d6589b3251c49c",
+          "invoice_id": "INV-b44cc1addd4c01b1",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 69042
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-3660fb1472957668",
+    "type": "payment_allocation",
+    "changes": [
+      {
+        "table": "payments",
+        "before": {
+          "doc_id": "DOC-c520881017ee67c9",
+          "payment_id": "PAY-2fc311a72b7cb521",
+          "timestamp": "2025-01-15T09:45:00+09:00",
+          "currency": "EUR",
+          "amount_minor": 180873,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-121798f9234f83ac",
+              "amount_minor": 180873
+            }
+          ]
+        },
+        "after": {
+          "doc_id": "DOC-c520881017ee67c9",
+          "payment_id": "PAY-2fc311a72b7cb521",
+          "timestamp": "2025-01-15T09:45:00+09:00",
+          "currency": "EUR",
+          "amount_minor": 180873,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-121798f9234f83ac",
+              "amount_minor": 90436
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-6cd3098c522f0ba6",
+    "type": "fx_date_rate",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-6423580b9132f4a4",
+          "timestamp": "2025-01-19T18:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-23db407f425758d6",
+          "invoice_id": "INV-5adc97e8237a69c3",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 143452,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-6423580b9132f4a4",
+          "timestamp": "2025-01-19T18:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-23db407f425758d6",
+          "invoice_id": "INV-5adc97e8237a69c3",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 144159,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-66ba418f913b270e",
+          "timestamp": "2025-01-19T18:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-23db407f425758d6",
+          "invoice_id": "INV-5adc97e8237a69c3",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 143452
+        },
+        "after": {
+          "row_id": "LR-66ba418f913b270e",
+          "timestamp": "2025-01-19T18:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-23db407f425758d6",
+          "invoice_id": "INV-5adc97e8237a69c3",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 144159
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-0d2e8fd694b07f80",
+    "type": "period_cutoff",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-5e4269e7c4da0908",
+          "timestamp": "2025-01-03T00:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-313e5a3089b8fcf2",
+          "invoice_id": "INV-b0a736c3611a5cc3",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 75000,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-5e4269e7c4da0908",
+          "timestamp": "2024-12-31T00:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-313e5a3089b8fcf2",
+          "invoice_id": "INV-b0a736c3611a5cc3",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 75000,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-1329a1adc9846ffe",
+          "timestamp": "2025-01-03T00:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-313e5a3089b8fcf2",
+          "invoice_id": "INV-b0a736c3611a5cc3",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 75000
+        },
+        "after": {
+          "row_id": "LR-1329a1adc9846ffe",
+          "timestamp": "2024-12-31T00:45:00+09:00",
+          "currency": "EUR",
+          "entity_id": "ENT-313e5a3089b8fcf2",
+          "invoice_id": "INV-b0a736c3611a5cc3",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 75000
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-2c783d7c5c074fce",
+    "type": "payment_allocation",
+    "changes": [
+      {
+        "table": "payments",
+        "before": {
+          "doc_id": "DOC-f7f4978393190e80",
+          "payment_id": "PAY-920add42bb5a9c72",
+          "timestamp": "2025-01-20T10:15:00+09:00",
+          "currency": "EUR",
+          "amount_minor": 344378,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-db862e841a1a2b68",
+              "amount_minor": 344378
+            }
+          ]
+        },
+        "after": {
+          "doc_id": "DOC-f7f4978393190e80",
+          "payment_id": "PAY-920add42bb5a9c72",
+          "timestamp": "2025-01-20T10:15:00+09:00",
+          "currency": "EUR",
+          "amount_minor": 344378,
+          "direction": "payment",
+          "invoice_refs": []
+        }
+      }
+    ]
+  }
+]

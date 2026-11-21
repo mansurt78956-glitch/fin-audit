@@ -1,0 +1,20 @@
+[
+  {
+    "issue_id": "ISS-1a49ccaf6b66706b",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "INV-8ad0eb159231fdaf",
+      "LR-18811fe3919873dc",
+      "LR-ba5d8c9cb03b6d96"
+    ],
+    "expected_amount_minor": 284056,
+    "currency": "USD",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-b708fcdbd6cf9575",
+        "LR-ba5d8c9cb03b6d96",
+        "LR-18811fe3919873dc"
+      ]
+    ]
+  }
+]

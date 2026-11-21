@@ -1,0 +1,27 @@
+[
+  {
+    "issue_id": "ISS-be22b438f6fcef92",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "INV-5a3b2af6f4492dd6",
+      "INV-72a611d33c252d96",
+      "LR-3de9e93fb65a9c34",
+      "LR-4eff84bddf2feebc",
+      "LR-4f6aada6d45b1fd3",
+      "LR-a600e58c9f6ef264"
+    ],
+    "expected_amount_minor": 961870,
+    "currency": "JPY",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-73939032095a3d91",
+        "LR-4f6aada6d45b1fd3",
+        "LR-4eff84bddf2feebc",
+        "DOC-1af6a1beb349ddbb",
+        "LR-a600e58c9f6ef264",
+        "LR-3de9e93fb65a9c34",
+        "FX-ea20fef8992fab80"
+      ]
+    ]
+  }
+]

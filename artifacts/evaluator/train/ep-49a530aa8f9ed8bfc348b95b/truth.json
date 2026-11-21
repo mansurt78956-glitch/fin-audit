@@ -1,0 +1,40 @@
+[
+  {
+    "issue_id": "ISS-6c47d8148e4c9281",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "INV-bb052670422a17f6",
+      "LR-d7ed3655f566ebb6",
+      "LR-e874b61e66f0587e"
+    ],
+    "expected_amount_minor": 163899,
+    "currency": "GBP",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-a4550d522c36e9f6",
+        "LR-e874b61e66f0587e",
+        "LR-d7ed3655f566ebb6",
+        "FX-57565869f3cb6f6e"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-ee2b13d2c87f6086",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-bb052670422a17f6",
+      "LR-d7ed3655f566ebb6",
+      "LR-e874b61e66f0587e"
+    ],
+    "expected_amount_minor": 6292,
+    "currency": "GBP",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-a4550d522c36e9f6",
+        "LR-e874b61e66f0587e",
+        "LR-d7ed3655f566ebb6",
+        "FX-57565869f3cb6f6e"
+      ]
+    ]
+  }
+]

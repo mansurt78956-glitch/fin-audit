@@ -1,0 +1,40 @@
+[
+  {
+    "issue_id": "ISS-3bef75e4191d0b45",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-0f980830534a09dd",
+      "LR-6f9f5ea22e27c055",
+      "PAY-f0d81017ca2cb948"
+    ],
+    "expected_amount_minor": 143340,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-54f1611132bf916d",
+        "DOC-d212a679b6db6e73",
+        "LR-aed9c8919f6850ec",
+        "LR-6f9f5ea22e27c055"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-7c255ef358a19f9f",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-0f980830534a09dd",
+      "LR-066b1507651bf904",
+      "LR-0735fdc93d8fdf5f"
+    ],
+    "expected_amount_minor": 838,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-54f1611132bf916d",
+        "LR-0735fdc93d8fdf5f",
+        "LR-066b1507651bf904",
+        "FX-b4854728a30422ed"
+      ]
+    ]
+  }
+]

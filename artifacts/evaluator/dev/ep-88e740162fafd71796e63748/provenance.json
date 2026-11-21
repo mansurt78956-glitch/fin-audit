@@ -1,0 +1,102 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "fc0e458f545c773b7bf88e784a50f61ce3868703b010465bc3d94cc5b975ad1a",
+    "record_counts": {
+      "ledger": 334,
+      "invoices": 85,
+      "payments": 82,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-6098289dbf6743cc",
+    "type": "payment_allocation",
+    "changes": [
+      {
+        "table": "payments",
+        "before": {
+          "doc_id": "DOC-f63753a8b9240bca",
+          "payment_id": "PAY-2ccfe3dd5f676dbe",
+          "timestamp": "2026-01-19T04:00:00+00:00",
+          "currency": "KZT",
+          "amount_minor": 85743665,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-42429bfaa432add3",
+              "amount_minor": 85743665
+            }
+          ]
+        },
+        "after": {
+          "doc_id": "DOC-f63753a8b9240bca",
+          "payment_id": "PAY-2ccfe3dd5f676dbe",
+          "timestamp": "2026-01-19T04:00:00+00:00",
+          "currency": "KZT",
+          "amount_minor": 85743665,
+          "direction": "payment",
+          "invoice_refs": []
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-4fbdf6dcc6006076",
+    "type": "fx_date_rate",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-dbbd0a90a29c0d43",
+          "timestamp": "2026-01-12T04:00:00+00:00",
+          "currency": "KZT",
+          "entity_id": "ENT-fac7676b0370bf91",
+          "invoice_id": "INV-42429bfaa432add3",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 171487331,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-dbbd0a90a29c0d43",
+          "timestamp": "2026-01-12T04:00:00+00:00",
+          "currency": "KZT",
+          "entity_id": "ENT-fac7676b0370bf91",
+          "invoice_id": "INV-42429bfaa432add3",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 192923247,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-919d5ad3d083435f",
+          "timestamp": "2026-01-12T04:00:00+00:00",
+          "currency": "KZT",
+          "entity_id": "ENT-fac7676b0370bf91",
+          "invoice_id": "INV-42429bfaa432add3",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 171487331
+        },
+        "after": {
+          "row_id": "LR-919d5ad3d083435f",
+          "timestamp": "2026-01-12T04:00:00+00:00",
+          "currency": "KZT",
+          "entity_id": "ENT-fac7676b0370bf91",
+          "invoice_id": "INV-42429bfaa432add3",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 192923247
+        }
+      }
+    ]
+  }
+]

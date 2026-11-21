@@ -1,0 +1,40 @@
+[
+  {
+    "issue_id": "ISS-3a5cb8a6a9ef8147",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-c806602f1220b2ec",
+      "LR-10cd1380904b9e50",
+      "LR-ce588e6eb249efaa"
+    ],
+    "expected_amount_minor": 4532812,
+    "currency": "KZT",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-72129826a8bd4bf7",
+        "LR-ce588e6eb249efaa",
+        "LR-10cd1380904b9e50",
+        "FX-416acb09a9a1fc1d"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-d697ce9b39b524c3",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "INV-2924cb1a7f8ecbec",
+      "LR-5b3de151c1d60c5b",
+      "LR-7ae1c0f3295e67b2"
+    ],
+    "expected_amount_minor": 49193484,
+    "currency": "KZT",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-7d49cd4274535783",
+        "LR-5b3de151c1d60c5b",
+        "LR-7ae1c0f3295e67b2",
+        "FX-bb2ca4524004a233"
+      ]
+    ]
+  }
+]

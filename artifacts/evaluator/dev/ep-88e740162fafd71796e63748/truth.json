@@ -1,0 +1,40 @@
+[
+  {
+    "issue_id": "ISS-6098289dbf6743cc",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-42429bfaa432add3",
+      "LR-fb32951c0f791174",
+      "PAY-2ccfe3dd5f676dbe"
+    ],
+    "expected_amount_minor": 85743665,
+    "currency": "KZT",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-74eb66be520885ed",
+        "DOC-f63753a8b9240bca",
+        "LR-952b98453705f5c7",
+        "LR-fb32951c0f791174"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-4fbdf6dcc6006076",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-42429bfaa432add3",
+      "LR-919d5ad3d083435f",
+      "LR-dbbd0a90a29c0d43"
+    ],
+    "expected_amount_minor": 21435916,
+    "currency": "KZT",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-74eb66be520885ed",
+        "LR-dbbd0a90a29c0d43",
+        "LR-919d5ad3d083435f",
+        "FX-1879dd5f50191950"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.2",
+  "generator_version": "2.2",
+  "episode_id": "ep-31122a79fa87cc63918d6101",
+  "company": "Мозаика Системы",
+  "base_currency": "JPY",
+  "period_start": "2024-01-01T00:00:00+06:00",
+  "period_end": "2024-01-31T23:59:59+06:00",
+  "timezone": "Asia/Almaty",
+  "record_counts": {
+    "ledger": 254,
+    "invoices": 69,
+    "payments": 58,
+    "fx": 172
+  },
+  "document_count": 127,
+  "ledger_row_count": 254,
+  "currency_exponents": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "KZT": 2,
+    "JPY": 0
+  },
+  "rounding": "ROUND_HALF_UP",
+  "csv_null": "null",
+  "transaction_count": 69
+}

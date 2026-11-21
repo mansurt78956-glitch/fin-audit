@@ -1,0 +1,21 @@
+[
+  {
+    "issue_id": "ISS-47573eb666255987",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "INV-3a751b0c5babe9df",
+      "LR-5d10106d69f9b7e5",
+      "LR-eacd6b8f94977293"
+    ],
+    "expected_amount_minor": 58287,
+    "currency": "GBP",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-e5da5d5fa89d1121",
+        "LR-5d10106d69f9b7e5",
+        "LR-eacd6b8f94977293",
+        "FX-3ca85492c4bb9536"
+      ]
+    ]
+  }
+]

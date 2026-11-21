@@ -1,0 +1,29 @@
+# Кэш Python и временные результаты инструментов.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Локальное окружение и настройки редакторов.
+.venv/
+venv/
+.codex/
+.vscode/
+.idea/
+
+# Локальные секреты и установщики.
+.env
+.env.*
+!.env.example
+*.exe
+*.msi
+*.download
+*.tmp
+
+# Служебные файлы операционной системы.
+.DS_Store
+Thumbs.db

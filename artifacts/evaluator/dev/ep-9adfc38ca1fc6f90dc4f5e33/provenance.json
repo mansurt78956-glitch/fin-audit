@@ -1,0 +1,12 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "3c1c84d07b0bf7e27abc3153db0b7bad146bc4a7e7dde502b9cb05c4b8d076ef",
+    "record_counts": {
+      "ledger": 258,
+      "invoices": 65,
+      "payments": 64,
+      "fx": 172
+    }
+  }
+]

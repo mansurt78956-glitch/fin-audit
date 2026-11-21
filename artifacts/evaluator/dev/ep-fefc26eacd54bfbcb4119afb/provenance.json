@@ -1,0 +1,102 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "a1299fb2342a7e06bcb4d78d797aec09b93fa8c56150a5761186df68a52225a0",
+    "record_counts": {
+      "ledger": 308,
+      "invoices": 82,
+      "payments": 72,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-f153dad5e738b6e6",
+    "type": "duplicate_invoice",
+    "changes": [
+      {
+        "table": "invoices",
+        "before": null,
+        "after": {
+          "doc_id": "DOC-d6ceba1c2dde2f20",
+          "invoice_id": "INV-634e691d830ed690",
+          "entity_id": "ENT-7b839322d2698621",
+          "supplier_invoice_ref": "REF-bee139bdd9ee4116",
+          "issued_at": "2024-01-23T09:00:00-05:00",
+          "due_at": "2024-02-22T09:00:00-05:00",
+          "currency": "USD",
+          "total_minor": 256010,
+          "line_items": [
+            {
+              "description": "оборудование",
+              "amount_minor": 256010
+            }
+          ]
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-9799cee13c948588",
+          "timestamp": "2024-01-23T09:00:00-05:00",
+          "currency": "USD",
+          "entity_id": "ENT-7b839322d2698621",
+          "invoice_id": "INV-634e691d830ed690",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 256010,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-5dde95a0bd369796",
+          "timestamp": "2024-01-23T09:00:00-05:00",
+          "currency": "USD",
+          "entity_id": "ENT-7b839322d2698621",
+          "invoice_id": "INV-634e691d830ed690",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 256010
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-e2c747be03b4bda3",
+    "type": "payment_allocation",
+    "changes": [
+      {
+        "table": "payments",
+        "before": {
+          "doc_id": "DOC-af18abaa84feee05",
+          "payment_id": "PAY-9e36ae94f18e295e",
+          "timestamp": "2024-01-30T21:30:00-05:00",
+          "currency": "USD",
+          "amount_minor": 209068,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-27d0d16cb2a9522b",
+              "amount_minor": 209068
+            }
+          ]
+        },
+        "after": {
+          "doc_id": "DOC-af18abaa84feee05",
+          "payment_id": "PAY-9e36ae94f18e295e",
+          "timestamp": "2024-01-30T21:30:00-05:00",
+          "currency": "USD",
+          "amount_minor": 209068,
+          "direction": "payment",
+          "invoice_refs": []
+        }
+      }
+    ]
+  }
+]

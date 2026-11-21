@@ -1,0 +1,126 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "6d24863bbdbf4c8e24684307024abb5b4b9c4a17fd885b955ee92f61167b9d19",
+    "record_counts": {
+      "ledger": 324,
+      "invoices": 85,
+      "payments": 77,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-6c47d8148e4c9281",
+    "type": "period_cutoff",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-e874b61e66f0587e",
+          "timestamp": "2024-01-04T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 163899,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-e874b61e66f0587e",
+          "timestamp": "2023-12-31T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 163899,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-d7ed3655f566ebb6",
+          "timestamp": "2024-01-04T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 163899
+        },
+        "after": {
+          "row_id": "LR-d7ed3655f566ebb6",
+          "timestamp": "2023-12-31T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 163899
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-ee2b13d2c87f6086",
+    "type": "fx_date_rate",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-e874b61e66f0587e",
+          "timestamp": "2023-12-31T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 163899,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-e874b61e66f0587e",
+          "timestamp": "2023-12-31T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 170191,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-d7ed3655f566ebb6",
+          "timestamp": "2023-12-31T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 163899
+        },
+        "after": {
+          "row_id": "LR-d7ed3655f566ebb6",
+          "timestamp": "2023-12-31T19:00:00+00:00",
+          "currency": "GBP",
+          "entity_id": "ENT-c098a84ffc4c8a62",
+          "invoice_id": "INV-bb052670422a17f6",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 170191
+        }
+      }
+    ]
+  }
+]

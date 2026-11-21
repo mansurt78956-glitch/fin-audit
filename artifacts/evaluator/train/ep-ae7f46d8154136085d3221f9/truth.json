@@ -1,0 +1,21 @@
+[
+  {
+    "issue_id": "ISS-6d98927f3a392386",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-24981649d3b0eddc",
+      "LR-152682d82bf0eafd",
+      "PAY-a2b637aebe27eb90"
+    ],
+    "expected_amount_minor": 231991,
+    "currency": "KZT",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-26dfdbc5ee0a9134",
+        "DOC-8288cd9357c22606",
+        "LR-b26964b46f98fdc3",
+        "LR-152682d82bf0eafd"
+      ]
+    ]
+  }
+]

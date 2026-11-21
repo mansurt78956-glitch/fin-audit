@@ -1,0 +1,216 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "94365caf1d5606d3db5fe982cc890959278182b955981a68b4067c4c1f6d3d66",
+    "record_counts": {
+      "ledger": 272,
+      "invoices": 70,
+      "payments": 66,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-d320b37eca9907a4",
+    "type": "duplicate_invoice",
+    "changes": [
+      {
+        "table": "invoices",
+        "before": null,
+        "after": {
+          "doc_id": "DOC-b873204fd6854064",
+          "invoice_id": "INV-a67ce1c6d4fddd2a",
+          "entity_id": "ENT-d3a2bfd2251ff46e",
+          "supplier_invoice_ref": "REF-d8db5a5ba5b05566",
+          "issued_at": "2024-01-02T23:15:00+09:00",
+          "due_at": "2024-02-01T23:15:00+09:00",
+          "currency": "KZT",
+          "total_minor": 233154,
+          "line_items": [
+            {
+              "description": "оборудование",
+              "amount_minor": 233154
+            }
+          ]
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-60b4ba70d6f2eb07",
+          "timestamp": "2024-01-02T23:15:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-d3a2bfd2251ff46e",
+          "invoice_id": "INV-a67ce1c6d4fddd2a",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 716,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-874db92d224c37a8",
+          "timestamp": "2024-01-02T23:15:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-d3a2bfd2251ff46e",
+          "invoice_id": "INV-a67ce1c6d4fddd2a",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 716
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-cc6aaab27c55874f",
+    "type": "payment_allocation",
+    "changes": [
+      {
+        "table": "payments",
+        "before": {
+          "doc_id": "DOC-c59e0ba456498009",
+          "payment_id": "PAY-a09668a1b787e39a",
+          "timestamp": "2024-01-14T05:15:00+09:00",
+          "currency": "JPY",
+          "amount_minor": 12500,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-e53733c11dc79b52",
+              "amount_minor": 12500
+            }
+          ]
+        },
+        "after": {
+          "doc_id": "DOC-c59e0ba456498009",
+          "payment_id": "PAY-a09668a1b787e39a",
+          "timestamp": "2024-01-14T05:15:00+09:00",
+          "currency": "JPY",
+          "amount_minor": 12500,
+          "direction": "payment",
+          "invoice_refs": []
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-c01810cd8b9f765e",
+    "type": "fx_date_rate",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-8aff415e0ad7e014",
+          "timestamp": "2024-01-03T04:45:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-8ebe718f60ad1e93",
+          "invoice_id": "INV-774ef6254b5411ce",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 38097,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-8aff415e0ad7e014",
+          "timestamp": "2024-01-03T04:45:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-8ebe718f60ad1e93",
+          "invoice_id": "INV-774ef6254b5411ce",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 38731,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-f1c0eca887231258",
+          "timestamp": "2024-01-03T04:45:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-8ebe718f60ad1e93",
+          "invoice_id": "INV-774ef6254b5411ce",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 38097
+        },
+        "after": {
+          "row_id": "LR-f1c0eca887231258",
+          "timestamp": "2024-01-03T04:45:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-8ebe718f60ad1e93",
+          "invoice_id": "INV-774ef6254b5411ce",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 38731
+        }
+      }
+    ]
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-adaa958980d1ba66",
+    "type": "period_cutoff",
+    "changes": [
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-87636cd48d9544f2",
+          "timestamp": "2024-01-01T08:15:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-947f33858b418f80",
+          "invoice_id": "INV-e81aa0442b63a4e1",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 263907,
+          "credit_minor": 0
+        },
+        "after": {
+          "row_id": "LR-87636cd48d9544f2",
+          "timestamp": "2023-12-31T08:15:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-947f33858b418f80",
+          "invoice_id": "INV-e81aa0442b63a4e1",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 263907,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": {
+          "row_id": "LR-1f67501d063183ee",
+          "timestamp": "2024-01-01T08:15:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-947f33858b418f80",
+          "invoice_id": "INV-e81aa0442b63a4e1",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 263907
+        },
+        "after": {
+          "row_id": "LR-1f67501d063183ee",
+          "timestamp": "2023-12-31T08:15:00+09:00",
+          "currency": "JPY",
+          "entity_id": "ENT-947f33858b418f80",
+          "invoice_id": "INV-e81aa0442b63a4e1",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 263907
+        }
+      }
+    ]
+  }
+]

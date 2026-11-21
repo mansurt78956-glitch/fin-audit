@@ -1,0 +1,121 @@
+{
+  "generator_version": "2.2",
+  "episodes": [
+    {
+      "episode_id": "ep-7e893c315fb8526f3debdaec",
+      "seed": 1000,
+      "config": {
+        "transactions": 65,
+        "base_currency": "USD",
+        "timezone": "America/New_York",
+        "issue_types": []
+      }
+    },
+    {
+      "episode_id": "ep-2cc15b2156cd61e6a7972fb7",
+      "seed": 1001,
+      "config": {
+        "transactions": 72,
+        "base_currency": "EUR",
+        "timezone": "Asia/Almaty",
+        "issue_types": []
+      }
+    },
+    {
+      "episode_id": "ep-69deab4410ef43de0c94afd6",
+      "seed": 1002,
+      "config": {
+        "transactions": 79,
+        "base_currency": "GBP",
+        "timezone": "UTC",
+        "issue_types": [
+          "duplicate_invoice"
+        ]
+      }
+    },
+    {
+      "episode_id": "ep-ae7f46d8154136085d3221f9",
+      "seed": 1003,
+      "config": {
+        "transactions": 86,
+        "base_currency": "KZT",
+        "timezone": "Europe/Paris",
+        "issue_types": [
+          "payment_allocation"
+        ]
+      }
+    },
+    {
+      "episode_id": "ep-c43d294ee53e90865c3c29ae",
+      "seed": 1004,
+      "config": {
+        "transactions": 93,
+        "base_currency": "JPY",
+        "timezone": "Asia/Tokyo",
+        "issue_types": [
+          "fx_date_rate"
+        ]
+      }
+    },
+    {
+      "episode_id": "ep-8838d08025a493ae44d660d6",
+      "seed": 1005,
+      "config": {
+        "transactions": 71,
+        "base_currency": "USD",
+        "timezone": "America/New_York",
+        "issue_types": [
+          "period_cutoff"
+        ]
+      }
+    },
+    {
+      "episode_id": "ep-2e3638043102af3b35ba0988",
+      "seed": 1006,
+      "config": {
+        "transactions": 78,
+        "base_currency": "EUR",
+        "timezone": "Asia/Almaty",
+        "interaction_scenario": "partial_fx"
+      }
+    },
+    {
+      "episode_id": "ep-49a530aa8f9ed8bfc348b95b",
+      "seed": 1007,
+      "config": {
+        "transactions": 85,
+        "base_currency": "GBP",
+        "timezone": "UTC",
+        "interaction_scenario": "cutoff_fx"
+      }
+    },
+    {
+      "episode_id": "ep-46def80cd5856ba762634748",
+      "seed": 1008,
+      "config": {
+        "transactions": 92,
+        "base_currency": "KZT",
+        "timezone": "Europe/Paris",
+        "issue_types": [
+          "fx_date_rate",
+          "period_cutoff"
+        ]
+      }
+    },
+    {
+      "episode_id": "ep-4c5f3a23175ca53d6065d951",
+      "seed": 1009,
+      "config": {
+        "transactions": 70,
+        "base_currency": "JPY",
+        "timezone": "Asia/Tokyo",
+        "issue_types": [
+          "duplicate_invoice",
+          "payment_allocation",
+          "fx_date_rate",
+          "period_cutoff"
+        ]
+      }
+    }
+  ]
+}

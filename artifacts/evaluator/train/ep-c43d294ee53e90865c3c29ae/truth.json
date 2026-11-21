@@ -1,0 +1,21 @@
+[
+  {
+    "issue_id": "ISS-575cd81fd4c9676a",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-fafd039056cf53dd",
+      "LR-225d766c4cd26a1f",
+      "LR-c85b916882c7df5c"
+    ],
+    "expected_amount_minor": 1769,
+    "currency": "JPY",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-5fceb27851f56051",
+        "LR-225d766c4cd26a1f",
+        "LR-c85b916882c7df5c",
+        "FX-95f8c2776ef6d7f6"
+      ]
+    ]
+  }
+]

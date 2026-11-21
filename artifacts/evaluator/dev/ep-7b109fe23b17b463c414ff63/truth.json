@@ -1,0 +1,101 @@
+[
+  {
+    "issue_id": "ISS-61b9178394b479c9",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "INV-5540e3aa5db915af",
+      "INV-b44cc1addd4c01b1",
+      "LR-03d5e53cc1cb98b9",
+      "LR-0c43edfceb534f8f",
+      "LR-3ecb33148aeb6f5b",
+      "LR-a98cdd75150f3005"
+    ],
+    "expected_amount_minor": 69042,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-30343fcdc46bd333",
+        "LR-0c43edfceb534f8f",
+        "LR-3ecb33148aeb6f5b",
+        "DOC-d88c8be021505e52",
+        "LR-03d5e53cc1cb98b9",
+        "LR-a98cdd75150f3005"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-3660fb1472957668",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-121798f9234f83ac",
+      "LR-011128214afea61f",
+      "PAY-2fc311a72b7cb521"
+    ],
+    "expected_amount_minor": 90437,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-a50f85843c752359",
+        "DOC-c520881017ee67c9",
+        "LR-a429a3f4aa3a84f2",
+        "LR-011128214afea61f"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-6cd3098c522f0ba6",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-5adc97e8237a69c3",
+      "LR-6423580b9132f4a4",
+      "LR-66ba418f913b270e"
+    ],
+    "expected_amount_minor": 707,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-7e4f51dbc8240690",
+        "LR-6423580b9132f4a4",
+        "LR-66ba418f913b270e",
+        "FX-dc54d59bf41433b8"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-0d2e8fd694b07f80",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "INV-b0a736c3611a5cc3",
+      "LR-1329a1adc9846ffe",
+      "LR-5e4269e7c4da0908"
+    ],
+    "expected_amount_minor": 75000,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-b2809698fe35515a",
+        "LR-5e4269e7c4da0908",
+        "LR-1329a1adc9846ffe"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-2c783d7c5c074fce",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-db862e841a1a2b68",
+      "LR-95d65d924b3fe5b2",
+      "PAY-920add42bb5a9c72"
+    ],
+    "expected_amount_minor": 344378,
+    "currency": "EUR",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-db73bb10dd116237",
+        "DOC-f7f4978393190e80",
+        "LR-b2507186b5f655a2",
+        "LR-95d65d924b3fe5b2"
+      ]
+    ]
+  }
+]

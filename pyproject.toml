@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools==75.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fin-audit-rl"
+version = "2.2.0"
+description = "Воспроизводимая среда финансового аудита на синтетических данных для обучения с подкреплением"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+packages = ["fin_audit_rl"]

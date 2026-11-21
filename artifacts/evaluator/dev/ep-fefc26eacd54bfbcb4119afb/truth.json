@@ -1,0 +1,45 @@
+[
+  {
+    "issue_id": "ISS-f153dad5e738b6e6",
+    "type": "duplicate_invoice",
+    "affected_ids": [
+      "INV-460ca0948359f2d5",
+      "INV-634e691d830ed690",
+      "LR-5dde95a0bd369796",
+      "LR-7d8c2a9a6bef2ceb",
+      "LR-9799cee13c948588",
+      "LR-acd56a7180ea6dd8"
+    ],
+    "expected_amount_minor": 256010,
+    "currency": "USD",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-8b64499b560c1f5e",
+        "LR-acd56a7180ea6dd8",
+        "LR-7d8c2a9a6bef2ceb",
+        "DOC-d6ceba1c2dde2f20",
+        "LR-9799cee13c948588",
+        "LR-5dde95a0bd369796"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-e2c747be03b4bda3",
+    "type": "payment_allocation",
+    "affected_ids": [
+      "INV-27d0d16cb2a9522b",
+      "LR-4fff25a33326db0d",
+      "PAY-9e36ae94f18e295e"
+    ],
+    "expected_amount_minor": 209068,
+    "currency": "USD",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-c5515b73ea6f964f",
+        "DOC-af18abaa84feee05",
+        "LR-e616c98ef547987f",
+        "LR-4fff25a33326db0d"
+      ]
+    ]
+  }
+]

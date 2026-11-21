@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.2",
+  "generator_version": "2.2",
+  "episode_id": "ep-94f7a78a6e20484561aaef48",
+  "company": "Полярная звезда Торговля",
+  "base_currency": "EUR",
+  "period_start": "2026-01-01T00:00:00+09:00",
+  "period_end": "2026-01-31T23:59:59+09:00",
+  "timezone": "Asia/Tokyo",
+  "record_counts": {
+    "ledger": 344,
+    "invoices": 88,
+    "payments": 84,
+    "fx": 172
+  },
+  "document_count": 172,
+  "ledger_row_count": 344,
+  "currency_exponents": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "KZT": 2,
+    "JPY": 0
+  },
+  "rounding": "ROUND_HALF_UP",
+  "csv_null": "null",
+  "transaction_count": 88
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.2",
+  "generator_version": "2.2",
+  "episode_id": "ep-8838d08025a493ae44d660d6",
+  "company": "Мозаика Сервис",
+  "base_currency": "USD",
+  "period_start": "2025-01-01T00:00:00-05:00",
+  "period_end": "2025-01-31T23:59:59-05:00",
+  "timezone": "America/New_York",
+  "record_counts": {
+    "ledger": 272,
+    "invoices": 71,
+    "payments": 65,
+    "fx": 172
+  },
+  "document_count": 136,
+  "ledger_row_count": 272,
+  "currency_exponents": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "KZT": 2,
+    "JPY": 0
+  },
+  "rounding": "ROUND_HALF_UP",
+  "csv_null": "null",
+  "transaction_count": 71
+}

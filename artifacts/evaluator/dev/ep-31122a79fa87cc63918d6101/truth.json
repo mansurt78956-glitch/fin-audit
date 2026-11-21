@@ -1,0 +1,40 @@
+[
+  {
+    "issue_id": "ISS-598af1e8a2e0da60",
+    "type": "period_cutoff",
+    "affected_ids": [
+      "INV-acd8ce9871a95fb1",
+      "LR-21ba6c9cca6af12a",
+      "LR-83b7b4e2c6ee75d6"
+    ],
+    "expected_amount_minor": 320791,
+    "currency": "JPY",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-f885fba21127d31b",
+        "LR-83b7b4e2c6ee75d6",
+        "LR-21ba6c9cca6af12a",
+        "FX-2fbb4f1c24e8b1f1"
+      ]
+    ]
+  },
+  {
+    "issue_id": "ISS-2db8cb47e1699c35",
+    "type": "fx_date_rate",
+    "affected_ids": [
+      "INV-acd8ce9871a95fb1",
+      "LR-21ba6c9cca6af12a",
+      "LR-83b7b4e2c6ee75d6"
+    ],
+    "expected_amount_minor": 40098,
+    "currency": "JPY",
+    "acceptable_evidence_sets": [
+      [
+        "DOC-f885fba21127d31b",
+        "LR-83b7b4e2c6ee75d6",
+        "LR-21ba6c9cca6af12a",
+        "FX-2fbb4f1c24e8b1f1"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.2",
+  "generator_version": "2.2",
+  "episode_id": "ep-9adfc38ca1fc6f90dc4f5e33",
+  "company": "Полярная звезда Сервис",
+  "base_currency": "GBP",
+  "period_start": "2025-01-01T00:00:00+01:00",
+  "period_end": "2025-01-31T23:59:59+01:00",
+  "timezone": "Europe/Paris",
+  "record_counts": {
+    "ledger": 258,
+    "invoices": 65,
+    "payments": 64,
+    "fx": 172
+  },
+  "document_count": 129,
+  "ledger_row_count": 258,
+  "currency_exponents": {
+    "USD": 2,
+    "EUR": 2,
+    "GBP": 2,
+    "KZT": 2,
+    "JPY": 0
+  },
+  "rounding": "ROUND_HALF_UP",
+  "csv_null": "null",
+  "transaction_count": 65
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "41249ef6af6a70cbb36e60338d99478033ca3e86ad271df1bcd105d187972624",
+    "record_counts": {
+      "ledger": 358,
+      "invoices": 91,
+      "payments": 88,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-be22b438f6fcef92",
+    "type": "duplicate_invoice",
+    "changes": [
+      {
+        "table": "invoices",
+        "before": null,
+        "after": {
+          "doc_id": "DOC-1af6a1beb349ddbb",
+          "invoice_id": "INV-72a611d33c252d96",
+          "entity_id": "ENT-39d253ea73bdcc80",
+          "supplier_invoice_ref": "REF-66c2ac40b7d37cda",
+          "issued_at": "2026-01-24T11:00:00+05:00",
+          "due_at": "2026-02-23T11:00:00+05:00",
+          "currency": "GBP",
+          "total_minor": 494584,
+          "line_items": [
+            {
+              "description": "хостинг",
+              "amount_minor": 494584
+            }
+          ]
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-a600e58c9f6ef264",
+          "timestamp": "2026-01-24T11:00:00+05:00",
+          "currency": "JPY",
+          "entity_id": "ENT-39d253ea73bdcc80",
+          "invoice_id": "INV-72a611d33c252d96",
+          "payment_id": null,
+          "account": "expense:operations",
+          "debit_minor": 961870,
+          "credit_minor": 0
+        }
+      },
+      {
+        "table": "ledger",
+        "before": null,
+        "after": {
+          "row_id": "LR-3de9e93fb65a9c34",
+          "timestamp": "2026-01-24T11:00:00+05:00",
+          "currency": "JPY",
+          "entity_id": "ENT-39d253ea73bdcc80",
+          "invoice_id": "INV-72a611d33c252d96",
+          "payment_id": null,
+          "account": "liability:accounts_payable",
+          "debit_minor": 0,
+          "credit_minor": 961870
+        }
+      }
+    ]
+  }
+]

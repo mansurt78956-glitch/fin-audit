@@ -1,0 +1,45 @@
+[
+  {
+    "stage": "base_book",
+    "book_sha256": "2e8f737f0d21e2ac5c113ae8357896902c766d5451d56f84803b39aa455bc8ed",
+    "record_counts": {
+      "ledger": 298,
+      "invoices": 75,
+      "payments": 74,
+      "fx": 172
+    }
+  },
+  {
+    "stage": "mutation",
+    "issue_id": "ISS-c9e584e2044ac067",
+    "type": "payment_allocation",
+    "changes": [
+      {
+        "table": "payments",
+        "before": {
+          "doc_id": "DOC-150212caa1732a3b",
+          "payment_id": "PAY-380b1a7fa1d96521",
+          "timestamp": "2024-01-26T00:15:00-05:00",
+          "currency": "USD",
+          "amount_minor": 236012,
+          "direction": "payment",
+          "invoice_refs": [
+            {
+              "invoice_id": "INV-1cdd2a0cc7e28cc7",
+              "amount_minor": 236012
+            }
+          ]
+        },
+        "after": {
+          "doc_id": "DOC-150212caa1732a3b",
+          "payment_id": "PAY-380b1a7fa1d96521",
+          "timestamp": "2024-01-26T00:15:00-05:00",
+          "currency": "USD",
+          "amount_minor": 236012,
+          "direction": "payment",
+          "invoice_refs": []
+        }
+      }
+    ]
+  }
+]

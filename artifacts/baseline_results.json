@@ -1,0 +1,2182 @@
+[
+  {
+    "policy": "random",
+    "seed": 3000,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_count": 0
+    },
+    "episode_id": "ep-7017810b0c8df79721d1d016",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.992,
+    "steps": 5,
+    "elapsed_seconds": 0.001028099999530241,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3000,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_count": 0
+    },
+    "episode_id": "ep-7017810b0c8df79721d1d016",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.972,
+    "steps": 15,
+    "elapsed_seconds": 0.008674299999256618,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3000,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_count": 0
+    },
+    "episode_id": "ep-7017810b0c8df79721d1d016",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.001075199994374998,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3000,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_count": 0
+    },
+    "episode_id": "ep-7017810b0c8df79721d1d016",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 4.050000279676169e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3001,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_count": 0
+    },
+    "episode_id": "ep-782cbeb479c68de3c6702f17",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.992,
+    "steps": 5,
+    "elapsed_seconds": 0.0009628999978303909,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3001,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_count": 0
+    },
+    "episode_id": "ep-782cbeb479c68de3c6702f17",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.97,
+    "steps": 16,
+    "elapsed_seconds": 0.011018300006981008,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3001,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_count": 0
+    },
+    "episode_id": "ep-782cbeb479c68de3c6702f17",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.000975500006461516,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3001,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_count": 0
+    },
+    "episode_id": "ep-782cbeb479c68de3c6702f17",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 4.359999729786068e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3002,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_count": 0
+    },
+    "episode_id": "ep-b470ca9ecf482a7fa5f15fbe",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.992,
+    "steps": 5,
+    "elapsed_seconds": 0.0010565999982645735,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3002,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_count": 0
+    },
+    "episode_id": "ep-b470ca9ecf482a7fa5f15fbe",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.96,
+    "steps": 21,
+    "elapsed_seconds": 0.015247599993017502,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3002,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_count": 0
+    },
+    "episode_id": "ep-b470ca9ecf482a7fa5f15fbe",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0016632000042591244,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3002,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_count": 0
+    },
+    "episode_id": "ep-b470ca9ecf482a7fa5f15fbe",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 4.050000279676169e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3003,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_count": 0
+    },
+    "episode_id": "ep-5fa7c94136ae2de3f721ce67",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.992,
+    "steps": 5,
+    "elapsed_seconds": 0.0007216999947559088,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3003,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_count": 0
+    },
+    "episode_id": "ep-5fa7c94136ae2de3f721ce67",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.944,
+    "steps": 29,
+    "elapsed_seconds": 0.024161599998478778,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3003,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_count": 0
+    },
+    "episode_id": "ep-5fa7c94136ae2de3f721ce67",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0007652000058442354,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3003,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_count": 0
+    },
+    "episode_id": "ep-5fa7c94136ae2de3f721ce67",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 4.389999958220869e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3004,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_count": 0
+    },
+    "episode_id": "ep-21526c3fb513195302b8d0b2",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.992,
+    "steps": 5,
+    "elapsed_seconds": 0.0005079999973531812,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3004,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_count": 0
+    },
+    "episode_id": "ep-21526c3fb513195302b8d0b2",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 0.898,
+    "steps": 52,
+    "elapsed_seconds": 0.04137409999384545,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3004,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_count": 0
+    },
+    "episode_id": "ep-21526c3fb513195302b8d0b2",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.000806999989436008,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3004,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_count": 0
+    },
+    "episode_id": "ep-21526c3fb513195302b8d0b2",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 4.449998959898949e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3005,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fc4e10f74b3db8eac0a2a2ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.000754000007873401,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3005,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fc4e10f74b3db8eac0a2a2ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.974,
+    "steps": 14,
+    "elapsed_seconds": 0.0071783000021241605,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3005,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fc4e10f74b3db8eac0a2a2ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0007082999945851043,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3005,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fc4e10f74b3db8eac0a2a2ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 8.849998994264752e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3006,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-c3ab1d1173508d760cf4d581",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0009522000036668032,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3006,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-c3ab1d1173508d760cf4d581",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.97,
+    "steps": 16,
+    "elapsed_seconds": 0.008928999988711439,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3006,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-c3ab1d1173508d760cf4d581",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0012083000037819147,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3006,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-c3ab1d1173508d760cf4d581",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 8.990000060293823e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3007,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-55969d388adafddac2fe2d72",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0008015999919734895,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3007,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-55969d388adafddac2fe2d72",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.96,
+    "steps": 21,
+    "elapsed_seconds": 0.013510200005839579,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3007,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-55969d388adafddac2fe2d72",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0007285000028787181,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3007,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-55969d388adafddac2fe2d72",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 8.940001134760678e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3008,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-e5ce656dc50956263b9d62f1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0007904999947641045,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3008,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-e5ce656dc50956263b9d62f1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.944,
+    "steps": 29,
+    "elapsed_seconds": 0.024938800008385442,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3008,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-e5ce656dc50956263b9d62f1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0008758000039961189,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3008,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "interaction_scenario": "cutoff_fx"
+    },
+    "episode_id": "ep-e5ce656dc50956263b9d62f1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00010239999392069876,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3009,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fa41e56c0c80c8f81cde4507",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0009698999929241836,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3009,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fa41e56c0c80c8f81cde4507",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.896,
+    "steps": 53,
+    "elapsed_seconds": 0.04063740000128746,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3009,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fa41e56c0c80c8f81cde4507",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0008139999990817159,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3009,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "interaction_scenario": "partial_fx"
+    },
+    "episode_id": "ep-fa41e56c0c80c8f81cde4507",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00010220000694971532,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3010,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-e95d20d576e134ecdb46bce6",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0007372999971266836,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3010,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-e95d20d576e134ecdb46bce6",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.972,
+    "steps": 15,
+    "elapsed_seconds": 0.006939900005818345,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3010,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-e95d20d576e134ecdb46bce6",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0008661000028951094,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3010,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-e95d20d576e134ecdb46bce6",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00010829999519046396,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3011,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-b9110ceadb68753fddac54dd",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0007893000001786277,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3011,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-b9110ceadb68753fddac54dd",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.968,
+    "steps": 17,
+    "elapsed_seconds": 0.011719399990397505,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3011,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-b9110ceadb68753fddac54dd",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0007007999956840649,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3011,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-b9110ceadb68753fddac54dd",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00011560000712051988,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3012,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-167baf3077732484a4e3b178",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0009508999937679619,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3012,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-167baf3077732484a4e3b178",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.96,
+    "steps": 21,
+    "elapsed_seconds": 0.01276559999678284,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3012,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-167baf3077732484a4e3b178",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0006890000076964498,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3012,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-167baf3077732484a4e3b178",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 8.100000559352338e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3013,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-de879232f31df2fc171515ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0005095000087749213,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3013,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-de879232f31df2fc171515ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.944,
+    "steps": 29,
+    "elapsed_seconds": 0.0184467999933986,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3013,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-de879232f31df2fc171515ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0006131999980425462,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3013,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-de879232f31df2fc171515ce",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.0008101999992504716,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3014,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-3ac4d46a1007142810f2c912",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0008213000110117719,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3014,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-3ac4d46a1007142810f2c912",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.894,
+    "steps": 54,
+    "elapsed_seconds": 0.03801760000351351,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3014,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-3ac4d46a1007142810f2c912",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0006891999946674332,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3014,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-3ac4d46a1007142810f2c912",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00011609999637585133,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3015,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-3dc0c0ae2baed86f52355b28",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.001131500001065433,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3015,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-3dc0c0ae2baed86f52355b28",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.974,
+    "steps": 14,
+    "elapsed_seconds": 0.0061157000018283725,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3015,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-3dc0c0ae2baed86f52355b28",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 4,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0007229000038933009,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3015,
+    "config": {
+      "transactions": 65,
+      "base_currency": "EUR",
+      "timezone": "Asia/Almaty",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-3dc0c0ae2baed86f52355b28",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00011809999705292284,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3016,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-c9063e2b30e8ca4cd5055af3",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.000712499997462146,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3016,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-c9063e2b30e8ca4cd5055af3",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.968,
+    "steps": 17,
+    "elapsed_seconds": 0.008246600002166815,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3016,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-c9063e2b30e8ca4cd5055af3",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0019318999984534457,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3016,
+    "config": {
+      "transactions": 90,
+      "base_currency": "JPY",
+      "timezone": "UTC",
+      "issue_types": [
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-c9063e2b30e8ca4cd5055af3",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 8.440000237897038e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3017,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-8109dd3e5dd2a59cf6a5d08c",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0008605999901192263,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3017,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-8109dd3e5dd2a59cf6a5d08c",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.96,
+    "steps": 21,
+    "elapsed_seconds": 0.010840900009498,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3017,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-8109dd3e5dd2a59cf6a5d08c",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0006155000010039657,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3017,
+    "config": {
+      "transactions": 120,
+      "base_currency": "GBP",
+      "timezone": "Europe/Paris",
+      "issue_types": [
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-8109dd3e5dd2a59cf6a5d08c",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 7.390000973828137e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3018,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-eba662c5f9a29046979c61c1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.00047479999193456024,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3018,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-eba662c5f9a29046979c61c1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.942,
+    "steps": 30,
+    "elapsed_seconds": 0.018289500003447756,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3018,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-eba662c5f9a29046979c61c1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 3,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0006646999972872436,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3018,
+    "config": {
+      "transactions": 200,
+      "base_currency": "USD",
+      "timezone": "Asia/Tokyo",
+      "issue_types": [
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice"
+      ]
+    },
+    "episode_id": "ep-eba662c5f9a29046979c61c1",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 3,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 9.800000407267362e-05,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "random",
+    "seed": 3019,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-2d8323bd3d73ffc6c01064bc",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 5,
+    "elapsed_seconds": 0.0007157999934861436,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "reconcile",
+    "seed": 3019,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-2d8323bd3d73ffc6c01064bc",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 0.894,
+    "steps": 54,
+    "elapsed_seconds": 0.041047100006835535,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "mark-all",
+    "seed": 3019,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-2d8323bd3d73ffc6c01064bc",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 0,
+      "fp": 30,
+      "fn": 12,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "reward": -1.0,
+    "steps": 2,
+    "elapsed_seconds": 0.0008491999906254932,
+    "terminated": true,
+    "truncated": false
+  },
+  {
+    "policy": "oracle",
+    "seed": 3019,
+    "config": {
+      "transactions": 400,
+      "base_currency": "KZT",
+      "timezone": "America/New_York",
+      "issue_types": [
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate",
+        "period_cutoff",
+        "duplicate_invoice",
+        "payment_allocation",
+        "fx_date_rate"
+      ]
+    },
+    "episode_id": "ep-2d8323bd3d73ffc6c01064bc",
+    "generator_version": "2.2",
+    "metrics": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "reward": 1.0,
+    "steps": 1,
+    "elapsed_seconds": 0.00024700000358279794,
+    "terminated": true,
+    "truncated": false
+  }
+]
