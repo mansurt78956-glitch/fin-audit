@@ -245,8 +245,8 @@ class EnvironmentTests(unittest.TestCase):
         metrics = score_submission(findings, truth, amount_tolerance_minor=2)
         self.assertEqual((metrics["tp"], metrics["fp"], metrics["fn"]), (2, 0, 0))
 
-    def test_padded_or_reordered_proof_cannot_repeat_the_same_claim(self):
-        """Дополнение и перестановка доказательств сохраняют однократный зачёт вывода."""
+    def test_unavailable_evidence_prevents_matching_even_with_complete_proof(self):
+        """Несуществующее доказательство исключает совпадение даже при полном наборе."""
         truth_core = {"type": "fx_date_rate", "affected_ids": ["row", "invoice"],
                       "expected_amount_minor": 10, "currency": "USD"}
         truth = [{**truth_core, "acceptable_evidence_sets": [[proof]]} for proof in ("one", "two")]
@@ -256,7 +256,8 @@ class EnvironmentTests(unittest.TestCase):
         unsupported = {**finding, "evidence_ids": ["padding"]}
         padded = {**finding, "affected_ids": ["row", "invoice"],
                   "evidence_ids": ["two", "padding", "one"], "explanation": "другое обоснование"}
-        metrics = score_submission([unsupported, finding, padded], truth)
+        metrics = score_submission([unsupported, finding, padded], truth,
+                                   available_evidence_ids={"one", "two"})
         self.assertEqual((metrics["tp"], metrics["fp"], metrics["fn"]), (1, 2, 1))
 
     def test_generated_books_remain_balanced_by_currency(self):

@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import re
 import time
@@ -10,6 +9,7 @@ import unittest
 from pathlib import Path
 
 from .env import AuditEnv
+from .episode_io import write_episode, write_json, write_jsonl
 from .generator import GENERATOR_VERSION, ISSUE_TYPES, generate_episode
 from .policies import mark_everything, oracle, random_explorer, simple_reconciler
 
@@ -57,16 +57,6 @@ def benchmark_cases():
         yield 3000 + i, config
 
 
-def write_json(path, obj):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-
-
-def _write_jsonl(file, rows):
-    for row in rows:
-        file.write(json.dumps(row, ensure_ascii=False, allow_nan=False) + "\n")
-
-
 def _remove_stale(out, split, expected):
     public = out / "open" / split
     for folder in public.iterdir():
@@ -95,20 +85,7 @@ def build_open(out):
             index.append({"episode_id": episode_id, "seed": seed, "config": config})
             folder = out / "open" / split / episode_id
             private = out / "evaluator" / split / episode_id
-            for key in ("manifest", "policy"):
-                write_json(folder / f"{key}.json", ep[key])
-            write_json(private / "truth.json", ep["truth"])
-            write_json(private / "provenance.json", ep["provenance"])
-            for table, rows in ep["tables"].items():
-                if table in ("invoices", "payments"):
-                    with (folder / f"{table}.jsonl").open("w", encoding="utf-8") as file:
-                        _write_jsonl(file, rows)
-                else:
-                    with (folder / f"{table}.csv").open("w", newline="", encoding="utf-8") as file:
-                        writer = csv.DictWriter(file, fieldnames=list(rows[0]))
-                        writer.writeheader()
-                        writer.writerows({key: "null" if value is None else value for key, value in row.items()}
-                                         for row in rows)
+            write_episode(ep, folder, private)
         if marker.is_file():
             _remove_stale(out, split, {row["episode_id"] for row in index})
         write_json(out / "open" / split / "episodes.json",
@@ -127,8 +104,8 @@ def record_training(out):
                            "observation": observation, "reward": 0.0, "terminated": False,
                            "truncated": False}
                 POLICIES[name](env, seed)
-                _write_jsonl(file, ({**row, "trajectory_id": trajectory_id, "policy": name}
-                                    for row in (initial, *env.trajectory)))
+                write_jsonl(file, ({**row, "trajectory_id": trajectory_id, "policy": name}
+                                   for row in (initial, *env.trajectory)))
 
 
 def run_bench(out):

@@ -11,3 +11,4 @@ dependencies = []
 
 [tool.setuptools]
 packages = ["fin_audit_rl"]
+py-modules = ["judge_adapter"]

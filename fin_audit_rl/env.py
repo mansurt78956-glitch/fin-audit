@@ -8,7 +8,9 @@ import operator
 import re
 import time
 from decimal import Context, Decimal, DecimalException, ROUND_HALF_EVEN, localcontext
+from pathlib import Path
 
+from .episode_io import read_episode
 from .generator import generate_episode
 from .matcher import score_submission, terminal_reward
 
@@ -19,7 +21,7 @@ _OPERATORS = {ast.Add: operator.add, ast.Sub: operator.sub, ast.Mult: operator.m
               ast.Div: operator.truediv, ast.FloorDiv: operator.floordiv, ast.Mod: operator.mod}
 
 
-def _calculator(expr):
+def _calculator(expr, *, as_text=False):
     if not isinstance(expr, str) or len(expr) > 200:
         raise ValueError("калькулятор принимает короткое арифметическое выражение")
     expr = expr.strip()
@@ -51,6 +53,8 @@ def _calculator(expr):
         result = visit(tree.body)
     if not result.is_finite() or result.copy_abs() > 10**18:
         raise ValueError("результат калькулятора выходит за допустимый диапазон")
+    if as_text:
+        return format(result, "f")
     return int(result) if result == result.to_integral_value() else float(result)
 
 
@@ -60,8 +64,27 @@ def _row_id(table, row):
     return row[TABLES[table]]
 
 
+def _record_indexes(tables):
+    records = {table: {_row_id(table, row): row for row in rows} for table, rows in tables.items()}
+    documents = records["invoices"] | records["payments"]
+    for table, key in (("invoices", "invoice_id"), ("payments", "payment_id")):
+        records[table].update({row[key]: row for row in tables[table]})
+    return records, documents
+
+
+def score_episode_findings(episode, findings):
+    evidence_ids = set()
+    if findings:
+        indexes, _ = _record_indexes(episode["tables"])
+        evidence_ids = {record_id for index in indexes.values() for record_id in index}
+    tolerance = episode["policy"].get("amount_tolerance_minor", 0)
+    return score_submission(findings, episode["truth"], tolerance,
+                            available_evidence_ids=evidence_ids)
+
+
 class AuditEnv:
-    def __init__(self, mode="train", max_steps=100, max_seconds=60):
+    def __init__(self, mode="train", max_steps=100, max_seconds=60, *,
+                 auto_reset=True, calculator_as_text=False):
         if mode not in ("train", "eval"):
             raise ValueError("mode должен принимать значение train или eval")
         if type(max_steps) is not int:
@@ -69,12 +92,16 @@ class AuditEnv:
         if type(max_seconds) not in (int, float) or not math.isfinite(max_seconds) or max_seconds < 0:
             raise ValueError("max_seconds должен быть конечным неотрицательным числом")
         self.mode, self.max_steps, self.max_seconds = mode, min(100, max(1, max_steps)), max_seconds
-        self.reset(0)
+        self.calculator_as_text = calculator_as_text
+        if auto_reset:
+            self.reset(0)
 
-    def reset(self, seed=0, config=None):
-        self.episode = generate_episode(seed, config)
+    def reset(self, seed=0, config=None, *, episode_dir=None):
+        self.started = time.monotonic()
+        self.episode = (generate_episode(seed, config) if episode_dir is None
+                        else read_episode(Path(episode_dir)))
         self._indexed_episode = None
-        self.steps, self.started = 0, time.monotonic()
+        self.steps = 0
         self.done = self.terminated = self.truncated = False
         self.trajectory = []
         self._evaluator_result = self.evaluator_reward = None
@@ -86,11 +113,7 @@ class AuditEnv:
 
     def _get_record(self, table, ident):
         if self._indexed_episode is not self.episode:
-            self._records = {name: {_row_id(name, row): row for row in rows}
-                             for name, rows in self.episode["tables"].items()}
-            self._documents = self._records["invoices"] | self._records["payments"]
-            for name, key in (("invoices", "invoice_id"), ("payments", "payment_id")):
-                self._records[name].update({row[key]: row for row in self.episode["tables"][name]})
+            self._records, self._documents = _record_indexes(self.episode["tables"])
             self._indexed_episode = self.episode
         if table is None:
             return self._documents.get(ident)
@@ -117,7 +140,7 @@ class AuditEnv:
             item = self._get_record(table, ident) if isinstance(ident, str) else None
             return {"record": item} if item is not None else {"error": "запись не найдена"}
         if name == "calculator":
-            return {"result": _calculator(action.get("expression"))}
+            return {"result": _calculator(action.get("expression"), as_text=self.calculator_as_text)}
         return {"error": "неизвестное действие"}
 
     def _transition(self, action, payload):
@@ -138,7 +161,7 @@ class AuditEnv:
 
     def _finish(self, findings, inspection_steps, *, truncated=False, error=None):
         self.done, self.terminated, self.truncated = True, not truncated, truncated
-        self._evaluator_result = score_submission(findings, self.episode["truth"])
+        self._evaluator_result = score_episode_findings(self.episode, findings)
         if error:
             self._evaluator_result.update(f1=0.0, evaluator_error=error)
         self.evaluator_reward = terminal_reward(self._evaluator_result, inspection_steps)
@@ -166,14 +189,18 @@ class AuditEnv:
         self.steps += 1
         name = action.get("action")
         if name == "submit":
+            payload = {"accepted": True}
             try:
                 if action.get("episode_id") != self.episode["manifest"]["episode_id"]:
                     raise ValueError("episode_id не соответствует текущему эпизоду")
                 self._finish(action.get("findings"), self.steps - 1)
             except ValueError:
                 self._finish([], self.steps - 1, error="неверная структура отправленных выводов")
-                return self._transition(action, {"error": "неверная структура отправленных выводов"})
-            return self._transition(action, {"accepted": True})
+                payload = {"error": "неверная структура отправленных выводов"}
+            if time.monotonic() - self.started >= self.max_seconds:
+                self._finish([], self.steps - 1, truncated=True)
+                payload = {"final_answer": []}
+            return self._transition(action, payload)
         if self.steps == self.max_steps:
             self._finish([], self.steps, truncated=True)
             return self._transition(action, {"final_answer": []})
