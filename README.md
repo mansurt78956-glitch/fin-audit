@@ -1,4 +1,4 @@
-# Финансовый аудит · Genesis FinTech Hackaton
+# Bookrift · Genesis FinTech Hackaton
 
 **Участники проекта** — Мансур, Самир, Дамир, Багнур.
 
